@@ -17,7 +17,7 @@ h1 {
 }
 
 #content {
-    width: 80%; max-width: 1000px;
+    width: 75%; max-width: 1000px;
     background:rgba(255,255,255,1.0);
     border:4px solid #000000;
     -webkit-border-radius: 20px;
@@ -35,4 +35,20 @@ h1 {
     text-align: center;
     font-family: 'Amaranth', sans-serif;
     font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    #content {
+        font-size: 16px;
+        width: 90%;
+        margin: 14px auto 3px; padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #content {
+        font-size: 16px;
+        width: 90%;
+        margin: 7px auto 3px; padding: 10px;
+    }
 }
