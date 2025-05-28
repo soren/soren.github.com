@@ -1,0 +1,54 @@
+#+TITLE: Coding Portfolio of Søren Lund
+#+LaTeX_CLASS_OPTIONS: [a4paper]
+
+* Introduction
+
+- Brief introduction about yourself: name, background, and areas of
+  expertise.
+- A short description of what visitors can expect in your portfolio.
+
+* Skills Section
+
+- List of programming languages (e.g., Java, Python, JavaScript, etc.)
+  and technologies (e.g., HTML, CSS, frameworks).
+- Tools and frameworks you're familiar with (e.g., Git, Docker, React,
+  etc.).
+- Soft skills (e.g., teamwork, communication, problem-solving).
+
+* Projects Section
+
+This is the heart of your portfolio. Include:
+
+- Project Title : Give your project a clear, descriptive name.
+- Description : A brief overview of the project, including its purpose
+  and technologies used.
+- Screenshots/Demo : Visuals or a link to a live demo of the project.
+- Source Code : Link to the project's GitHub repository or other
+  version control where your code is hosted.
+- Role : Specify your role in the project if it was collaborative.
+- Highlight Achievements : If applicable, mention any outcomes, such
+  as problem-solving tactics, user engagement metrics, or skills
+  acquired.
+
+* Experience Section
+
+- Detailed information about your relevant work experience.
+- Internships, freelance positions, or relevant volunteer work.
+- Describe your responsibilities and the technologies you used.
+
+* Education Section
+
+- Degree(s) obtained, names of institutions, and graduation dates.
+- Relevant coursework or certifications (e.g., coding bootcamps, online courses).
+
+* Blog or Articles Section (Optional)
+- Write articles about coding concepts, tutorials, or personal experiences in tech.
+- This section showcases your communication skills and depth of knowledge.
+
+* Contact Information
+- Offer ways for people to reach you (email, LinkedIn, etc.).
+- Consider having a contact form for ease of communication.
+
+* Testimonials/References (Optional)
+
+- If applicable, include quotes or testimonials from colleagues or clients.
