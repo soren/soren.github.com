@@ -1,0 +1,12 @@
+image: lechten/emacs-tex-org:v2
+
+pages:
+  stage: deploy
+  script:
+  - ./build.sh
+  artifacts:
+    paths:
+    - public
+    expire_in: 
+  only:
+    - main
