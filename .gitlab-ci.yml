@@ -1,4 +1,4 @@
-image: lechten/emacs-tex-org:v2
+image: dfrkp/emacs-latex:latest
 
 pages:
   stage: deploy
@@ -7,6 +7,6 @@ pages:
   artifacts:
     paths:
     - public
-    expire_in: 
+    expire_in:
   only:
     - main
