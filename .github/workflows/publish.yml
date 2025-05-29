@@ -6,6 +6,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Pre-Build
+        run: mkdir public
+        run: chmod -R a+w public
       - name: Build
         uses: addnab/docker-run-action@v3
         with:
