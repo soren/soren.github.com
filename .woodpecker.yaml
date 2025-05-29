@@ -10,15 +10,18 @@ clone:
       recursive: true
 
 steps:
-  setup:
-    image: bitnami/git
-    secrets: [mail, codeberg_token]
-    commands:
-      - git config --global user.email $MAIL
-      - git config --global user.name "Woodpecker CI"
-      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git public
-    when:
-      event: push
+#  setup:
+#    image: bitnami/git
+#    environment:
+#      MAIL:
+#        from_secrets: mail
+#      CODEBERG_TOKEN: codeberg_token
+#    commands:
+#      - git config --global user.email $MAIL
+#      - git config --global user.name "Woodpecker CI"
+#      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git public
+#    when:
+#      event: push
 
   build:
     image: dfrkp/emacs-latex
@@ -29,7 +32,9 @@ steps:
 
   publish:
     image: bitnami/git
-    secrets: [mail]
+    environment:
+      MAIL:
+        from_secrets: mail
     commands:
       - cd public
       - git config --global user.email $MAIL
