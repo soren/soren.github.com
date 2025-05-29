@@ -1,0 +1,19 @@
+on: [push]
+
+jobs:
+  pre-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: git worktree add -B gh-pages public origin/gh-pages
+  build:
+    runs-on: dfrkp/emacs-latex
+    steps:
+      - run: ./build.sh
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - run: cd public
+      - run: git add -A
+      - run: git commit -m "Publish to gh-pages"
+      - run: git push
