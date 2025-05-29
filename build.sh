@@ -4,6 +4,8 @@ set -euo pipefail
 
 script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)
 
-emacs -Q --script "${script_dir}/build.el"
+cd "$script_dir" || exit 1
 
-ls -l "$script_dir"
+emacs -Q --script build.el
+
+ls -l
