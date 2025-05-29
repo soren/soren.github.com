@@ -38,20 +38,25 @@ steps:
   publish:
     image: bitnami/git
     environment:
+      HUGO_OUTPUT: public
+      # secrets must be set in Woodpecker configuration
       MAIL:
-        from_secrets: mail
+        from_secret: mail
+      CODEBERG_TOKEN:
+        from_secret: codeberg_token
     commands:
-      - cd public
+      # Git configuration
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
-      - git add -A
-      - if ! git diff-index --quiet HEAD; then
-      -     git commit -m "Build at $(date -Is)"
-      -     if [ $CI_COMMIT_BRANCH = "main" ]; then
-      -         git push origin pages
-      -     else
-      -         echo "Skipping push branch $CI_COMMIT_BRANCH"
-      -     fi
-      - fi
+      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
+      # Copy build step output to repository folder
+      - cp -ar $HUGO_OUTPUT/. $CI_REPO_NAME/
+      # Needed for custom domains
+      - cp .domains $CI_REPO_NAME || true # Ignore if it doesn't exist
+      # Commit and push all static files with pipeline started timestamp
+      - cd $CI_REPO_NAME
+      - git add .
+      - git commit -m "Woodpecker CI ${CI_COMMIT_SHA}"
+      - git push
     when:
       event: push
