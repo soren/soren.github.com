@@ -2,12 +2,15 @@ on: [push]
 
 jobs:
   site:
-    runs-on: dfrkp/emacs-latex
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build
-        run: ./build.sh
+        uses: addnab/docker-run-action@v3
+        with:
+          image: dfrkp/emacs-latex
+          runt: ./build.sh
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
         with:
