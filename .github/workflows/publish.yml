@@ -10,7 +10,8 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: dfrkp/emacs-latex
-          run: ./build.sh
+          options: -v ${{ github.workspace }}:/work
+          run: /work/build.sh
       - name: Publish
         uses: peaceiris/actions-gh-pages@v4
         with:
