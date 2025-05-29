@@ -21,7 +21,7 @@ steps:
       event: push
 
   build:
-    image: dfrkp/emacs-latex:latest
+    image: dfrkp/emacs-latex
     commands:
       - ./build.sh
     when:
