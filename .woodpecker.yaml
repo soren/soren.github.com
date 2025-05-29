@@ -1,0 +1,47 @@
+when:
+  branch:
+    exclude: pages
+  event: [push, pull_request]
+
+clone:
+  git:
+    image: woodpeckerci/plugin-git
+    settings:
+      recursive: true
+
+steps:
+  setup:
+    image: bitnami/git
+    secrets: [mail, codeberg_token]
+    commands:
+      - git config --global user.email $MAIL
+      - git config --global user.name "Woodpecker CI"
+      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git public
+    when:
+      event: push
+
+  build:
+    image: dfrkp/emacs-latex:latest
+    commands:
+      - ./build.sh
+    when:
+      event: [pull_request, push]
+
+  publish:
+    image: bitnami/git
+    secrets: [mail]
+    commands:
+      - cd public
+      - git config --global user.email $MAIL
+      - git config --global user.name "Woodpecker CI"
+      - git add -A
+      - if ! git diff-index --quiet HEAD; then
+      -     git commit -m "Build at $(date -Is)"
+      -     if [ $CI_COMMIT_BRANCH = "main" ]; then
+      -         git push origin pages
+      -     else
+      -         echo "Skipping push branch $CI_COMMIT_BRANCH"
+      -     fi
+      - fi
+    when:
+      event: push
