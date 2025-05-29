@@ -10,7 +10,7 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: dfrkp/emacs-latex
-          runt: ./build.sh
+          run: ./build.sh
       - name: Publish
         uses: peaceiris/actions-gh-pages@v4
         with:
