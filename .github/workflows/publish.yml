@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   site:
-    runs-on: ubuntu-latest
+    runs-on: dfrkp/emacs-latex
     steps:
       - name: Checkout
         uses: actions/checkout@v4
