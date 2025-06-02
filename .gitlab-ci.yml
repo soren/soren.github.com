@@ -1,4 +1,4 @@
-image: dfrkp/emacs-latex:latest
+image: silex/emacs:alpine-ci
 
 pages:
   stage: deploy

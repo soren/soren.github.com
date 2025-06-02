@@ -1,8 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-set -euo pipefail
-
-script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)
+script_dir=$(cd "$(dirname "$0")" && pwd -P)
 
 cd "$script_dir" || exit 1
 

@@ -1,13 +1,5 @@
 ;; Load the publishing systems
 (require 'ox-publish)
-(require 'ox-latex)
-
-(unless (boundp 'org-latex-classes)
-  (setq org-latex-classes nil))
-(add-to-list 'org-latex-classes
-             '("article"
-               "\\documentclass{article}"
-               ("\\section{%s}" . "\\section*{%s}")))
 
 ;; Define the publishing project
 (setq org-publish-project-alist
@@ -21,12 +13,7 @@
              :with-creator nil          ;; Don't include Emacs and Org versions in footer
              :with-toc t                ;; Include a table of contents
              :section-numbers nil       ;; Don't include section numbers
-             :time-stamp-file nil)      ;; Don't include time stamp in file
-       (list "org-site:pdf"
-             :recursive t
-             :base-directory "./content"
-             :publishing-directory "./public"
-             :publishing-function 'org-latex-publish-to-pdf)))
+             :time-stamp-file nil)))      ;; Don't include time stamp in file
 
 ;; Customize the HTML output
 (setq org-html-validation-link nil            ;; Don't show validation link

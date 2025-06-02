@@ -6,14 +6,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Pre-Build
-        run: |
-          mkdir public
-          chmod -R a+w public
       - name: Build
         uses: addnab/docker-run-action@v3
         with:
-          image: dfrkp/emacs-latex
+          image: silex/emacs:alpine-ci
           options: -v ${{ github.workspace }}:/work
           run: /work/build.sh
       - name: Publish

@@ -23,13 +23,8 @@ steps:
 #    when:
 #      event: push
 
-  pre-build:
-    image: alpine
-    commands:
-      - mkdir public
-      - chmod -R a+w public
   build:
-    image: dfrkp/emacs-latex
+    image: silex/emacs:alpine-ci
     commands:
       - ./build.sh
     when:
