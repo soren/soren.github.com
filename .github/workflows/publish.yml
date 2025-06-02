@@ -3,15 +3,12 @@ on: [push]
 jobs:
   site:
     runs-on: ubuntu-latest
+    container: silex/emacs:alpine-ci
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build
-        uses: addnab/docker-run-action@v3
-        with:
-          image: silex/emacs:alpine-ci
-          options: -v ${{ github.workspace }}:/work
-          run: /work/build.sh
+        run: ./build.sh
       - name: Publish
         uses: peaceiris/actions-gh-pages@v4
         with:
