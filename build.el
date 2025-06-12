@@ -19,7 +19,7 @@
 (setq org-html-validation-link nil            ;; Don't show validation link
       org-html-head-include-scripts nil       ;; Use our own scripts
       org-html-head-include-default-style nil ;; Use our own styles
-      org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />")
+      org-html-head "<style>body {max-width:70ch;margin:auto;padding:0 2ch 0 2ch;font-family:Sans-Serif;} .header {padding-top:2ex;padding-bottom:1ex;} .title {font-family:Serif;font-style:italic;font-size:250%;margin:0;border-bottom:1px solid;} .title + p {margin:.5ex 0 0 0;font-size:75%;} p.footer {margin-top: 4ex;border-top: 1px solid;padding-top: 1ex;font-style:italic;}</style>")
 
 ;; Generate the site output
 (org-publish-all t)
