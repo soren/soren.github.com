@@ -1,0 +1,51 @@
+#+TITLE: Perl CPAN Modules by Søren Lund
+#+OPTIONS: toc:nil
+
+* Acme::Be::Modern
+
+[[https://travis-ci.org/soren/Acme-Be-Modern][https://travis-ci.org/soren/Acme-Be-Modern.svg?branch=master]]
+[[https://metacpan.org/release/Acme-Be-Modern][https://badge.fury.io/pl/Acme-Be-Modern.svg]]
+
+My very first module on CPAN. It's meant as a joke, and I did it
+mainly to learn how to create a module for CPAN.
+
+- You can read more on the [[https://metacpan.org/module/Acme::Be::Modern][metacpan page]], or
+- check out/fork the project on [[https://github.com/soren/Acme-Be-Modern][GitHub]].
+
+* App::TimeClock
+
+[[https://travis-ci.org/soren/App-TimeClock][https://travis-ci.org/soren/App-TimeClock.svg?branch=master]]
+[[https://coveralls.io/github/soren/App-TimeClock?branch=master][https://coveralls.io/repos/github/soren/App-TimeClock/badge.svg?branch=master]]
+[[https://readthedocs.org/projects/apptimeclock/?badge=latest][https://readthedocs.org/projects/apptimeclock/badge/?version=latest&.svg]]
+[[https://metacpan.org/release/App-TimeClock][https://badge.fury.io/pl/App-TimeClock.svg]]
+
+This is a simple reporting utility for TimeClock.
+
+TimeClock is an Emacs time tracking package. I use this daily to keep
+track of my time spent on different projects.
+
+- You can read more on the [[https://metacpan.org/module/timeclock.pl][metacpan page]], or
+- check out/fork the project on [[https://github.com/soren/App-TimeClock][GitHub]].
+
+* Digest::PasswordComposer
+
+[[https://travis-ci.org/soren/Digest-PasswordComposer][https://travis-ci.org/soren/Digest-PasswordComposer.svg?branch=master]]
+[[https://metacpan.org/release/Digest-PasswordComposer][https://badge.fury.io/pl/Digest-PasswordComposer.svg]]
+
+A small utility to generate unique passwords for web sites. The
+password is generated based on the domain name and a passphrase from
+the user.
+
+- You can read more on the [[https://metacpan.org/module/Digest::PasswordComposer][metacpan page]], or
+- check out/fork the project on [[https://github.com/soren/Digest-PasswordComposer][GitHub]].
+
+* Map::Tube::Copenhagen
+
+[[https://travis-ci.org/soren/Map-Tube-Copenhagen][https://travis-ci.org/soren/Map-Tube-Copenhagen.svg?branch=master]]
+[[https://coveralls.io/github/soren/Map-Tube-Copenhagen?branch=master][https://coveralls.io/repos/github/soren/Map-Tube-Copenhagen/badge.svg?branch=master]]
+[[https://metacpan.org/release/Map-Tube-Copenhagen][https://badge.fury.io/pl/Map-Tube-Copenhagen.svg]]
+
+Map of the Copenhagen metro lines.
+
+- You can read more on the [[https://metacpan.org/module/Map::Tube::Copenhagen][metacpan page]], or
+- check out/fork the project on [[https://github.com/soren/Map-Tube-Copenhagen][GitHub]].
