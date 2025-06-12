@@ -1,4 +1,5 @@
 #+TITLE: Coding Portfolio of Søren Lund
+#+OPTIONS: toc:nil
 
 * Introduction
 
