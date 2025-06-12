@@ -2,7 +2,7 @@ image: silex/emacs:alpine-ci
 
 pages:
   stage: deploy
-  env:
+  variables:
     BASE_URL: https://slu.gitlab.io
   script:
   - ./build.sh
