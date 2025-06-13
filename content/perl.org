@@ -1,4 +1,4 @@
-#+TITLE: Perl CPAN Modules by Søren Lund
+#+TITLE: Perl Modules by Søren Lund
 #+OPTIONS: toc:nil
 
 * Acme::Be::Modern

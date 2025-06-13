@@ -14,7 +14,10 @@
              :with-creator nil          ;; Don't include Emacs and Org versions in footer
              :with-toc t                ;; Include a table of contents
              :section-numbers nil       ;; Don't include section numbers
-             :time-stamp-file nil)      ;; Don't include time stamp in file
+             :time-stamp-file nil       ;; Don't include time stamp in file
+             :html-postamble t          ;; Include footer
+             :html-postamble-format '(("en" "<p class=\"footer\"><FOOTER></p>")))
+
        (list "org-site:static"
              :recursive t
              :base-directory "./content"
@@ -26,7 +29,7 @@
 (setq org-html-validation-link nil            ;; Don't show validation link
       org-html-head-include-scripts nil       ;; Use our own scripts
       org-html-head-include-default-style nil ;; Use our own styles
-      org-html-head "<style>body {max-width:70ch;margin:auto;padding:0 2ch 0 2ch;font-family:Sans-Serif;} .header {padding-top:2ex;padding-bottom:1ex;} .title {font-family:Serif;font-style:italic;font-size:250%;margin:0;border-bottom:1px solid;} .title + p {margin:.5ex 0 0 0;font-size:75%;} p.footer {margin-top: 4ex;border-top: 1px solid;padding-top: 1ex;font-style:italic;}</style>")
+      org-html-head "<style>body {max-width:70ch;margin:auto;padding:0 2ch 0 2ch;font-family:Sans-Serif;} .header {padding-top:2ex;padding-bottom:1ex;} .title {font-family:Serif;font-style:italic;font-size:250%;margin:0;border-bottom:1px solid;} p.byline {margin:.5ex 0 0 0;} p.footer {margin-top: 4ex;border-top: 1px solid;padding-top: 1ex;} p.byline,p.footer {font-size:75%;display:flex;justify-content: space-between;}</style>")
 
 ;; Generate the site output
 (org-publish-all t)
