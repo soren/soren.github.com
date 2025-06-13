@@ -11,7 +11,8 @@ jobs:
         env:
           BASE_URL: https://soren.github.io
         run: |
-          ls -lR
+          env | sort
+          git config --global --add safe.directory /__w/soren.github.com/soren.github.com
           ./build.sh
       - name: Publish
         uses: peaceiris/actions-gh-pages@v4
