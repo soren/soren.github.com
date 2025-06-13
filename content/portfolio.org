@@ -1,0 +1,54 @@
+#+TITLE: Coding Portfolio of Søren Lund
+#+OPTIONS: toc:nil
+
+* Introduction
+
+- TODO: Brief introduction about yourself: name, background, and areas of
+  expertise.
+- TODO: A short description of what visitors can expect in your portfolio.
+
+* Skills Section
+
+- TODO: List of programming languages (e.g., Java, Python, JavaScript, etc.)
+  and technologies (e.g., HTML, CSS, frameworks).
+- TODO: Tools and frameworks you're familiar with (e.g., Git, Docker, React,
+  etc.).
+- TODO: Soft skills (e.g., teamwork, communication, problem-solving).
+
+* Projects Section
+
+This is the heart of your portfolio. Include:
+
+- TODO: Project Title : Give your project a clear, descriptive name.
+- TODO: Description : A brief overview of the project, including its purpose
+  and technologies used.
+- TODO: Screenshots/Demo : Visuals or a link to a live demo of the project.
+- TODO: Source Code : Link to the project's GitHub repository or other
+  version control where your code is hosted.
+- TODO: Role : Specify your role in the project if it was collaborative.
+- TODO: Highlight Achievements : If applicable, mention any outcomes, such
+  as problem-solving tactics, user engagement metrics, or skills
+  acquired.
+
+* Experience Section
+
+- TODO: Detailed information about your relevant work experience.
+- TODO: Internships, freelance positions, or relevant volunteer work.
+- TODO: Describe your responsibilities and the technologies you used.
+
+* Education Section
+
+- TODO: Degree(s) obtained, names of institutions, and graduation dates.
+- TODO: Relevant coursework or certifications (e.g., coding bootcamps, online courses).
+
+* Blog or Articles Section (Optional)
+- TODO: Write articles about coding concepts, tutorials, or personal experiences in tech.
+- TODO: This section showcases your communication skills and depth of knowledge.
+
+* Contact Information
+- TODO: Offer ways for people to reach you (email, LinkedIn, etc.).
+- TODO: Consider having a contact form for ease of communication.
+
+* Testimonials/References (Optional)
+
+- TODO: If applicable, include quotes or testimonials from colleagues or clients.
