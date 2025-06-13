@@ -2,7 +2,7 @@
 #+OPTIONS: toc:nil
 
 This is my hub, where you can find various information about me,
-especially relating to my professionally life.
+especially relating to my professional life.
 
 * CV
 
