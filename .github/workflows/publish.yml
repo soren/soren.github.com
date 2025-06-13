@@ -10,7 +10,9 @@ jobs:
       - name: Build
         env:
           BASE_URL: https://soren.github.io
-        run: ./build.sh
+        run: |
+          ls -lR
+          ./build.sh
       - name: Publish
         uses: peaceiris/actions-gh-pages@v4
         with:
