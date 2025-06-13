@@ -8,8 +8,8 @@ especially relating to my professionally life.
 
 You can download my CV and accompanying skills list as PDF files here:
 
-- [[resume/cv.pdf][CV (in Danish)]]
-- [[resume/kompetencer.pdf][Skills List (in Danish)]]
+- [[file:resume/cv.pdf][CV (in Danish)]]
+- [[file:resume/kompetencer.pdf][Skills List (in Danish)]]
 
 * Open Source Projects
 
