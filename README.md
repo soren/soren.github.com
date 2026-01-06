@@ -1,4 +1,5 @@
-[![status-badge](https://ci.codeberg.org/api/badges/13654/status.svg)](https://ci.codeberg.org/repos/13654)
+[![Codeberg CI](https://ci.codeberg.org/api/badges/13654/status.svg)](https://ci.codeberg.org/repos/13654)
+[![GitLab CI](https://gitlab.com/slu/slu.gitlab.io/badges/main/pipeline.svg)](https://gitlab.com/slu/slu.gitlab.io/)
 ----
 
 # Professional Profile
