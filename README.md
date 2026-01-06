@@ -1,9 +1,12 @@
+[![status-badge](https://ci.codeberg.org/api/badges/13654/status.svg)](https://ci.codeberg.org/repos/13654)
+----
+
 # Professional Profile
 
 This is the source of my professional profile, which consists of my CV, Resume, and Coding Portfolio. All are available at
 
-- https://slu.gitlab.io/
 - https://slu.codeberg.page/
+- https://slu.gitlab.io/
 - https://soren.github.io/
 
 The content is maintained as a set of [Org-mode] files and converted to HTML using an [Elisp] script. This setup is inspired by [Build Your Website with Org Mode].
