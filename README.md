@@ -1,5 +1,6 @@
 [![Codeberg CI](https://ci.codeberg.org/api/badges/13654/status.svg)](https://ci.codeberg.org/repos/13654)
 [![GitLab CI](https://gitlab.com/slu/slu.gitlab.io/badges/main/pipeline.svg)](https://gitlab.com/slu/slu.gitlab.io/)
+[![GitHub CI](https://github.com/soren/soren.github.com/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/soren/soren.github.com/actions/workflows/pages/pages-build-deployment)
 ----
 
 # Professional Profile
