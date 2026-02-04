@@ -16,7 +16,7 @@
              :section-numbers nil       ;; Don't include section numbers
              :time-stamp-file nil       ;; Don't include time stamp in file
              :html-postamble t          ;; Include footer
-             :html-postamble-format '(("en" "<p class=\"footer\"><FOOTER></p>")))
+             :html-postamble-format '(("en" "<hr><p><em>Copyright ©2025 Søren Lund and licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1'>CC BY-SA 4.0</a></em></p><hr><p><a href=\"https://codeberg.org/slu/slu.codeberg.page\"><img alt=\"Get it on Codeberg\" src=\"https://get-it-on.codeberg.org/get-it-on-blue-on-white.svg\" height=\"30\"></a></p>")))
 
        (list "org-site:static"
              :recursive t
@@ -29,7 +29,7 @@
 (setq org-html-validation-link nil            ;; Don't show validation link
       org-html-head-include-scripts nil       ;; Use our own scripts
       org-html-head-include-default-style nil ;; Use our own styles
-      org-html-head "<style>body {max-width:70ch;margin:auto;padding:0 2ch 0 2ch;font-family:Sans-Serif;} .header {padding-top:2ex;padding-bottom:1ex;} .title {font-family:Serif;font-style:italic;font-size:250%;margin:0;border-bottom:1px solid;} p.byline {margin:.5ex 0 0 0;} p.footer {margin-top: 4ex;border-top: 1px solid;padding-top: 1ex;} p.byline,p.footer {font-size:75%;display:flex;justify-content: space-between;}</style>")
+      org-html-head "<style>html {margin:2ch;} body {max-width:70ch;padding:2ch;margin:auto;}</style>")
 
 ;; Generate the site output
 (org-publish-all t)
