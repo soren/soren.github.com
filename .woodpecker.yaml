@@ -15,7 +15,7 @@ steps:
     environment:
       BASE_URL: https://slu.codeberg.page
     commands:
-      - ./build.sh
+      - scripts/build.sh
     when:
       event: [pull_request, push]
 

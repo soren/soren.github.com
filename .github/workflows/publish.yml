@@ -12,7 +12,7 @@ jobs:
           BASE_URL: https://soren.github.io
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          ./build.sh
+          scripts/build.sh
       - name: Publish
         uses: peaceiris/actions-gh-pages@v4
         with:

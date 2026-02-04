@@ -5,7 +5,7 @@ pages:
   variables:
     BASE_URL: https://slu.gitlab.io
   script:
-  - ./build.sh
+  - scripts/build.sh
   artifacts:
     paths:
     - public
